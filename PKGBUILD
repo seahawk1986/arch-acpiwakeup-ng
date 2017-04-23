@@ -19,6 +19,7 @@ package() {
   install -Dm755 acpiwakeupctl "$pkgdir/usr/bin/acpiwakeupctl"
   install -Dm644 acpiwakeup.conf  "$pkgdir/etc/acpiwakeup.conf"
   install -Dm644 acpiwakeupd.service "${pkgdir}"/usr/lib/systemd/system/acpiwakeupd.service
+  install -Dm644 org.acpi.wakeup.conf "${pkgdir}"/etc/dbus-1/system.d/org.acpi.wakeup.conf
 }
 
 # vim:set ts=2 sw=2 et:
